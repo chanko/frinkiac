@@ -1,15 +1,13 @@
 # Frinkiac
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/frinkiac`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A ruby wrapper to interact with Frinkiac.com API.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'frinkiac'
+gem 'frinkiac', '~> 0.0.1'
 ```
 
 And then execute:
@@ -22,7 +20,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Tha main object defined in this gem is ```Frinkiac::Screencap```, which gives us easy access to the attributes returned by the API: ```id```, ```episode``` and ```timestamp```.
+
+It also provides an ```image_url``` method, that takes the episode and timestamp information to return a valid image url.
+
+
+Currently there are only two ways to interact with the API through this gem.
+
+You can get an array of screencaps that match a specific search term:
+
+```
+Frinkiac::Screencap.search('lazy saturday')
+```
+
+
+And you can get a random screencap from the afromentioned array of screencaps:
+
+```
+Frinkiac::Screencap.random('lazy saturday')
+```
 
 ## Development
 
