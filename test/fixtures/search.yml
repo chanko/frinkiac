@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://frinkiac.com/api/search?q=lazy%20saturday
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Sun, 07 Feb 2016 21:20:52 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1fc3c5fea21f67ce0ce22354c95741cd1454880052; expires=Mon, 06-Feb-17
+        21:20:52 GMT; path=/; domain=.frinkiac.com; HttpOnly
+      Cache-Control:
+      - public, max-age=1800
+      Cf-Cache-Status:
+      - EXPIRED
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Sun, 07 Feb 2016 21:50:52 GMT
+      Strict-Transport-Security:
+      - max-age=15552000
+      X-Content-Type-Options:
+      - nosniff
+      Cf-Ray:
+      - 2712242656d12834-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"Id":1201207,"Episode":"S09E09","Timestamp":40022,"Filename":""},{"Id":1201192,"Episode":"S09E09","Timestamp":37019,"Filename":""},{"Id":1201204,"Episode":"S09E09","Timestamp":39605,"Filename":""},{"Id":1201202,"Episode":"S09E09","Timestamp":38854,"Filename":""},{"Id":1201205,"Episode":"S09E09","Timestamp":39822,"Filename":""},{"Id":1201212,"Episode":"S09E09","Timestamp":40439,"Filename":""},{"Id":1201191,"Episode":"S09E09","Timestamp":36686,"Filename":""},{"Id":1201203,"Episode":"S09E09","Timestamp":39422,"Filename":""},{"Id":1201185,"Episode":"S09E09","Timestamp":36268,"Filename":""},{"Id":1201201,"Episode":"S09E09","Timestamp":39071,"Filename":""},{"Id":1201199,"Episode":"S09E09","Timestamp":38654,"Filename":""},{"Id":1201208,"Episode":"S09E09","Timestamp":40239,"Filename":""},{"Id":1201198,"Episode":"S09E09","Timestamp":38437,"Filename":""},{"Id":1201184,"Episode":"S09E09","Timestamp":36068,"Filename":""},{"Id":1201206,"Episode":"S09E09","Timestamp":39255,"Filename":""},{"Id":1201197,"Episode":"S09E09","Timestamp":38237,"Filename":""},{"Id":1201194,"Episode":"S09E09","Timestamp":37620,"Filename":""},{"Id":1201196,"Episode":"S09E09","Timestamp":38020,"Filename":""},{"Id":1201195,"Episode":"S09E09","Timestamp":37436,"Filename":""},{"Id":1201200,"Episode":"S09E09","Timestamp":37820,"Filename":""},{"Id":1201193,"Episode":"S09E09","Timestamp":37236,"Filename":""},{"Id":1201189,"Episode":"S09E09","Timestamp":36485,"Filename":""},{"Id":1201190,"Episode":"S09E09","Timestamp":36852,"Filename":""},{"Id":1018422,"Episode":"S08E04","Timestamp":565647,"Filename":""},{"Id":179409,"Episode":"S02E14","Timestamp":107468,"Filename":""},{"Id":1536427,"Episode":"S11E15","Timestamp":1106160,"Filename":""},{"Id":1018441,"Episode":"S08E04","Timestamp":568150,"Filename":""},{"Id":310036,"Episode":"S03E12","Timestamp":266999,"Filename":""},{"Id":337897,"Episode":"S03E16","Timestamp":968625,"Filename":""},{"Id":1317358,"Episode":"S10E02","Timestamp":890505,"Filename":""},{"Id":1078521,"Episode":"S08E14","Timestamp":141240,"Filename":""},{"Id":1391539,"Episode":"S10E14","Timestamp":1079160,"Filename":""},{"Id":1430275,"Episode":"S10E21","Timestamp":152768,"Filename":""},{"Id":199773,"Episode":"S02E17","Timestamp":223023,"Filename":""},{"Id":870107,"Episode":"S07E08","Timestamp":121904,"Filename":""},{"Id":1384816,"Episode":"S10E13","Timestamp":927092,"Filename":""},{"Id":1301727,"Episode":"S09E25","Timestamp":325774,"Filename":""},{"Id":1301722,"Episode":"S09E25","Timestamp":325107,"Filename":""},{"Id":870113,"Episode":"S07E08","Timestamp":122571,"Filename":""},{"Id":1018434,"Episode":"S08E04","Timestamp":567316,"Filename":""},{"Id":1539467,"Episode":"S11E16","Timestamp":483760,"Filename":""},{"Id":1018458,"Episode":"S08E04","Timestamp":571153,"Filename":""},{"Id":1504485,"Episode":"S11E10","Timestamp":632560,"Filename":""},{"Id":337904,"Episode":"S03E16","Timestamp":970777,"Filename":""},{"Id":642498,"Episode":"S05E19","Timestamp":760959,"Filename":""},{"Id":1504482,"Episode":"S11E10","Timestamp":630760,"Filename":""},{"Id":1351226,"Episode":"S10E08","Timestamp":273138,"Filename":""},{"Id":1417686,"Episode":"S10E19","Timestamp":100182,"Filename":""}]'
+    http_version: 
+  recorded_at: Sun, 07 Feb 2016 21:20:52 GMT
+recorded_with: VCR 3.0.1

@@ -1,6 +1,6 @@
 # Frinkiac
 
-A ruby wrapper to interact with Frinkiac.com API.
+A ruby wrapper to interact with Frinkiac.com API based Ben Lewis's post: [Wrapping Your API In A Custom Ruby Gem](https://blog.engineyard.com/2014/wrapping-your-api-in-a-ruby-gem).
 
 ## Installation
 
