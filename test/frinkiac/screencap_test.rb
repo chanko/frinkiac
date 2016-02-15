@@ -40,6 +40,38 @@ class FrinkiacScreencapTest < Minitest::Test
     end
   end
 
+  def test_it_gives_back_the_correct_caption
+    VCR.use_cassette('caption') do
+      screencap = Frinkiac::Screencap.search('strap in and feel the g\'s').first
+
+      assert_equal("NOBODY SNUGGLES WITH MAX POWER.\nYOU STRAP YOURSELF IN AND FEEL THE Gs!\nOH, LORD.", screencap.caption)
+    end
+  end
+
+  def test_it_gives_back_the_correct_meme_url
+    VCR.use_cassette('meme') do
+      screencap = Frinkiac::Screencap.search('strap in and feel the g\'s').first
+
+      assert_equal(screencap.meme_url, 'https://frinkiac.com/meme/S10E13/775056.jpg?lines=NOBODY%20SNUGGLES%20WITH%20MAX%20POWER.%0AYOU%20STRAP%20YOURSELF%20IN%20AND%20FEEL%20THE%20Gs!%0AOH,%20LORD.')
+    end
+  end
+
+  def test_it_allows_a_custom_caption_for_a_meme
+    VCR.use_cassette('meme') do
+      screencap = Frinkiac::Screencap.search('strap in and feel the g\'s').first
+
+      assert_equal(screencap.meme_url("NOBODY SNUGGLES WITH MAX POWER.\nYOU STRAP YOURSELF IN AND FEEL THE Gs!"), 'https://frinkiac.com/meme/S10E13/775056.jpg?lines=NOBODY%20SNUGGLES%20WITH%20MAX%20POWER.%0AYOU%20STRAP%20YOURSELF%20IN%20AND%20FEEL%20THE%20Gs!')
+    end
+  end
+
+  def test_it_allows_captions_as_arrays
+    VCR.use_cassette('meme') do
+      screencap = Frinkiac::Screencap.search('strap in and feel the g\'s').first
+
+      assert_equal(screencap.meme_url(["NOBODY SNUGGLES WITH MAX POWER.","YOU STRAP YOURSELF IN AND FEEL THE Gs!"]), 'https://frinkiac.com/meme/S10E13/775056.jpg?lines=NOBODY%20SNUGGLES%20WITH%20MAX%20POWER.%0AYOU%20STRAP%20YOURSELF%20IN%20AND%20FEEL%20THE%20Gs!')
+    end
+  end
+
   def test_it_gives_back_a_random_screencap
     VCR.use_cassette('search') do
       screencap = Frinkiac::Screencap.random('lazy saturday')

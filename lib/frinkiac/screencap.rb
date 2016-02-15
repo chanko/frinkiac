@@ -3,6 +3,7 @@ require 'json'
 
 SITE_URL = 'https://frinkiac.com'
 API_URL = "#{SITE_URL}/api/search"
+CAPTION_URL = "#{SITE_URL}/api/caption"
 
 module Frinkiac
   class Screencap
@@ -16,6 +17,20 @@ module Frinkiac
 
     def image_url
       "#{SITE_URL}/img/#{episode}/#{timestamp}.jpg"
+    end
+
+    def meme_url(caption = nil)
+      caption = self.caption if caption.nil?
+      caption = caption.join("\n") if caption.is_a?(Array)
+      "#{SITE_URL}/meme/#{episode}/#{timestamp}.jpg?lines=#{URI.escape caption}"
+    end
+
+    def caption
+      @caption ||= begin
+        response = Faraday.get("#{CAPTION_URL}?e=#{@episode}&t=#{@timestamp}")
+        body = JSON.parse(response.body)
+        body["Subtitles"].map { |s| s["Content"] }.join("\n")
+      end
     end
 
     def self.search(query)

@@ -24,6 +24,19 @@ Tha main object defined in this gem is ```Frinkiac::Screencap```, which gives us
 
 It also provides an ```image_url``` method, that takes the episode and timestamp information to return a valid image url.
 
+You can also get the ```caption``` from the image, as well as the ```meme_url```, which returns the caption overlaid on top of the image.
+
+You can also specify your own caption for the meme URL like so:
+
+```
+screencap.meme_url("I love those lazy Saturdays")
+```
+
+Or multiple lines of text like so
+
+```
+screencap.meme_url(["I love those lazy Saturdays", "Unlike that fake Saturday that almost got me fired"])
+```
 
 Currently there are only two ways to interact with the API through this gem.
 
@@ -54,4 +67,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
