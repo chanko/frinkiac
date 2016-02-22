@@ -44,7 +44,7 @@ class FrinkiacScreencapTest < Minitest::Test
     VCR.use_cassette('caption') do
       screencap = Frinkiac::Screencap.search('strap in and feel the g\'s').first
 
-      assert_equal("NOBODY SNUGGLES WITH MAX POWER.\nYOU STRAP YOURSELF IN AND FEEL THE Gs!\nOH, LORD.", screencap.caption)
+      assert_equal("NOBODY SNUGGLES WITH MAX\nPOWER. YOU STRAP\nYOURSELF IN AND FEEL THE\nGs!", screencap.caption)
     end
   end
 
@@ -52,7 +52,7 @@ class FrinkiacScreencapTest < Minitest::Test
     VCR.use_cassette('meme') do
       screencap = Frinkiac::Screencap.search('strap in and feel the g\'s').first
 
-      assert_equal(screencap.meme_url, 'https://frinkiac.com/meme/S10E13/775056.jpg?lines=NOBODY%20SNUGGLES%20WITH%20MAX%20POWER.%0AYOU%20STRAP%20YOURSELF%20IN%20AND%20FEEL%20THE%20Gs!%0AOH,%20LORD.')
+      assert_equal(screencap.meme_url, 'https://frinkiac.com/meme/S10E13/774439.jpg?lines=NOBODY%20SNUGGLES%20WITH%20MAX%0APOWER.%20YOU%20STRAP%0AYOURSELF%20IN%20AND%20FEEL%20THE%0AGs!')
     end
   end
 
@@ -60,7 +60,7 @@ class FrinkiacScreencapTest < Minitest::Test
     VCR.use_cassette('meme') do
       screencap = Frinkiac::Screencap.search('strap in and feel the g\'s').first
 
-      assert_equal(screencap.meme_url("NOBODY SNUGGLES WITH MAX POWER.\nYOU STRAP YOURSELF IN AND FEEL THE Gs!"), 'https://frinkiac.com/meme/S10E13/775056.jpg?lines=NOBODY%20SNUGGLES%20WITH%20MAX%20POWER.%0AYOU%20STRAP%20YOURSELF%20IN%20AND%20FEEL%20THE%20Gs!')
+      assert_equal(screencap.meme_url("NOBODY SNUGGLES WITH MAX POWER.\nYOU STRAP YOURSELF IN AND FEEL THE Gs!"), 'https://frinkiac.com/meme/S10E13/774439.jpg?lines=NOBODY%20SNUGGLES%20WITH%20MAX%20POWER.%0AYOU%20STRAP%20YOURSELF%20IN%20AND%20FEEL%20THE%20Gs!')
     end
   end
 
@@ -68,7 +68,7 @@ class FrinkiacScreencapTest < Minitest::Test
     VCR.use_cassette('meme') do
       screencap = Frinkiac::Screencap.search('strap in and feel the g\'s').first
 
-      assert_equal(screencap.meme_url(["NOBODY SNUGGLES WITH MAX POWER.","YOU STRAP YOURSELF IN AND FEEL THE Gs!"]), 'https://frinkiac.com/meme/S10E13/775056.jpg?lines=NOBODY%20SNUGGLES%20WITH%20MAX%20POWER.%0AYOU%20STRAP%20YOURSELF%20IN%20AND%20FEEL%20THE%20Gs!')
+      assert_equal(screencap.meme_url(["NOBODY SNUGGLES WITH MAX POWER.","YOU STRAP YOURSELF IN AND FEEL THE Gs!"]), 'https://frinkiac.com/meme/S10E13/774439.jpg?lines=NOBODY%20SNUGGLES%20WITH%20MAX%20POWER.%0AYOU%20STRAP%20YOURSELF%20IN%20AND%20FEEL%20THE%20Gs!')
     end
   end
 

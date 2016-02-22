@@ -1,5 +1,6 @@
 require 'faraday'
 require 'json'
+require 'word_wrap'
 
 SITE_URL = 'https://frinkiac.com'
 API_URL = "#{SITE_URL}/api/search"
@@ -22,14 +23,16 @@ module Frinkiac
     def meme_url(caption = nil)
       caption = self.caption if caption.nil?
       caption = caption.join("\n") if caption.is_a?(Array)
+
       "#{SITE_URL}/meme/#{episode}/#{timestamp}.jpg?lines=#{URI.escape caption}"
     end
 
     def caption
       @caption ||= begin
-        response = Faraday.get("#{CAPTION_URL}?e=#{@episode}&t=#{@timestamp}")
+        response = Faraday.get("#{CAPTION_URL}?e=#{episode}&t=#{timestamp}")
         body = JSON.parse(response.body)
-        body["Subtitles"].map { |s| s["Content"] }.join("\n")
+
+        format_captions(body['Subtitles'].collect { |s| s['Content'] })
       end
     end
 
@@ -43,6 +46,13 @@ module Frinkiac
     def self.random(query)
       screencaps = search(query)
       screencaps[rand(screencaps.size)] if screencaps.any?
+    end
+
+    private
+    def format_captions(captions)
+      caption_string = captions.join(' ')
+
+      WordWrap.ww(caption_string, 25).chop
     end
   end
 end

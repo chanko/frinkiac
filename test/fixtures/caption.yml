@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://frinkiac.com/api/search?q=strap%20in%20and%20feel%20the%20g's
+    uri: https://frinkiac.com/api/search?q=strap%20in%20and%20feel%20the%20g%27s
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Mon, 15 Feb 2016 17:14:20 GMT
+      - Mon, 22 Feb 2016 01:11:37 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -29,8 +29,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d3710a6311ea0e2f70eeca2def75722e31455556460; expires=Tue, 14-Feb-17
-        17:14:20 GMT; path=/; domain=.frinkiac.com; HttpOnly
+      - __cfduid=d7bcb9150fcbc33a9359dae41a6744f971456103497; expires=Tue, 21-Feb-17
+        01:11:37 GMT; path=/; domain=.frinkiac.com; HttpOnly
       Cache-Control:
       - public, max-age=1800
       Cf-Cache-Status:
@@ -38,21 +38,21 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Expires:
-      - Mon, 15 Feb 2016 17:44:20 GMT
+      - Mon, 22 Feb 2016 01:41:37 GMT
       Strict-Transport-Security:
       - max-age=15552000
       X-Content-Type-Options:
       - nosniff
       Cf-Ray:
-      - 2752a60334043488-LHR
+      - 2786d1698a8f289a-SJC
     body:
-      encoding: UTF-8
-      string: '[{"Id":1384173,"Episode":"S10E13","Timestamp":775056,"Filename":""},{"Id":1384166,"Episode":"S10E13","Timestamp":774022,"Filename":""},{"Id":1384168,"Episode":"S10E13","Timestamp":774639,"Filename":""},{"Id":1384176,"Episode":"S10E13","Timestamp":776108,"Filename":""},{"Id":1384174,"Episode":"S10E13","Timestamp":775690,"Filename":""},{"Id":1384171,"Episode":"S10E13","Timestamp":775474,"Filename":""},{"Id":1384170,"Episode":"S10E13","Timestamp":774439,"Filename":""},{"Id":1384181,"Episode":"S10E13","Timestamp":776525,"Filename":""},{"Id":1384172,"Episode":"S10E13","Timestamp":774856,"Filename":""},{"Id":1384175,"Episode":"S10E13","Timestamp":775891,"Filename":""},{"Id":1384169,"Episode":"S10E13","Timestamp":775273,"Filename":""},{"Id":1384177,"Episode":"S10E13","Timestamp":776308,"Filename":""},{"Id":1384167,"Episode":"S10E13","Timestamp":774222,"Filename":""},{"Id":243566,"Episode":"S03E01","Timestamp":724593,"Filename":""},{"Id":243575,"Episode":"S03E01","Timestamp":725094,"Filename":""},{"Id":243573,"Episode":"S03E01","Timestamp":726161,"Filename":""},{"Id":243585,"Episode":"S03E01","Timestamp":728781,"Filename":""},{"Id":243580,"Episode":"S03E01","Timestamp":727062,"Filename":""},{"Id":243576,"Episode":"S03E01","Timestamp":726879,"Filename":""},{"Id":243567,"Episode":"S03E01","Timestamp":724426,"Filename":""},{"Id":243591,"Episode":"S03E01","Timestamp":729148,"Filename":""},{"Id":243588,"Episode":"S03E01","Timestamp":727830,"Filename":""},{"Id":243587,"Episode":"S03E01","Timestamp":728964,"Filename":""},{"Id":243592,"Episode":"S03E01","Timestamp":728013,"Filename":""},{"Id":243579,"Episode":"S03E01","Timestamp":726679,"Filename":""},{"Id":243582,"Episode":"S03E01","Timestamp":728397,"Filename":""},{"Id":243583,"Episode":"S03E01","Timestamp":727263,"Filename":""},{"Id":243571,"Episode":"S03E01","Timestamp":725477,"Filename":""},{"Id":243568,"Episode":"S03E01","Timestamp":724927,"Filename":""},{"Id":243578,"Episode":"S03E01","Timestamp":725828,"Filename":""},{"Id":243577,"Episode":"S03E01","Timestamp":725294,"Filename":""},{"Id":243584,"Episode":"S03E01","Timestamp":728580,"Filename":""},{"Id":243581,"Episode":"S03E01","Timestamp":727446,"Filename":""},{"Id":243586,"Episode":"S03E01","Timestamp":727630,"Filename":""},{"Id":243574,"Episode":"S03E01","Timestamp":726495,"Filename":""},{"Id":243572,"Episode":"S03E01","Timestamp":725661,"Filename":""},{"Id":243570,"Episode":"S03E01","Timestamp":724760,"Filename":""},{"Id":566689,"Episode":"S05E07","Timestamp":510676,"Filename":""},{"Id":994247,"Episode":"S07E25","Timestamp":844944,"Filename":""},{"Id":861908,"Episode":"S07E06","Timestamp":1160275,"Filename":""},{"Id":861899,"Episode":"S07E06","Timestamp":1159607,"Filename":""},{"Id":1024181,"Episode":"S08E05","Timestamp":341840,"Filename":""},{"Id":1434152,"Episode":"S10E21","Timestamp":1009874,"Filename":""},{"Id":610269,"Episode":"S05E14","Timestamp":528911,"Filename":""},{"Id":569129,"Episode":"S05E07","Timestamp":1058223,"Filename":""},{"Id":1058207,"Episode":"S08E10","Timestamp":1080829,"Filename":""},{"Id":1541966,"Episode":"S11E16","Timestamp":1029160,"Filename":""},{"Id":1128346,"Episode":"S08E22","Timestamp":290823,"Filename":""}]'
+      encoding: ASCII-8BIT
+      string: '[{"Id":1384170,"Episode":"S10E13","Timestamp":774439,"Filename":""},{"Id":1384167,"Episode":"S10E13","Timestamp":774222,"Filename":""},{"Id":1384175,"Episode":"S10E13","Timestamp":775891,"Filename":""},{"Id":1384174,"Episode":"S10E13","Timestamp":775690,"Filename":""},{"Id":1384166,"Episode":"S10E13","Timestamp":774022,"Filename":""},{"Id":1384171,"Episode":"S10E13","Timestamp":775474,"Filename":""},{"Id":1384181,"Episode":"S10E13","Timestamp":776525,"Filename":""},{"Id":1384168,"Episode":"S10E13","Timestamp":774639,"Filename":""},{"Id":1384177,"Episode":"S10E13","Timestamp":776308,"Filename":""},{"Id":1384169,"Episode":"S10E13","Timestamp":775273,"Filename":""},{"Id":1384173,"Episode":"S10E13","Timestamp":775056,"Filename":""},{"Id":1384176,"Episode":"S10E13","Timestamp":776108,"Filename":""},{"Id":1384172,"Episode":"S10E13","Timestamp":774856,"Filename":""},{"Id":243579,"Episode":"S03E01","Timestamp":726679,"Filename":""},{"Id":243578,"Episode":"S03E01","Timestamp":725828,"Filename":""},{"Id":243575,"Episode":"S03E01","Timestamp":725094,"Filename":""},{"Id":243577,"Episode":"S03E01","Timestamp":725294,"Filename":""},{"Id":243571,"Episode":"S03E01","Timestamp":725477,"Filename":""},{"Id":243582,"Episode":"S03E01","Timestamp":728397,"Filename":""},{"Id":243570,"Episode":"S03E01","Timestamp":724760,"Filename":""},{"Id":243576,"Episode":"S03E01","Timestamp":726879,"Filename":""},{"Id":243587,"Episode":"S03E01","Timestamp":728964,"Filename":""},{"Id":243591,"Episode":"S03E01","Timestamp":729148,"Filename":""},{"Id":243585,"Episode":"S03E01","Timestamp":728781,"Filename":""},{"Id":243574,"Episode":"S03E01","Timestamp":726495,"Filename":""},{"Id":243583,"Episode":"S03E01","Timestamp":727263,"Filename":""},{"Id":243580,"Episode":"S03E01","Timestamp":727062,"Filename":""},{"Id":243592,"Episode":"S03E01","Timestamp":728013,"Filename":""},{"Id":243573,"Episode":"S03E01","Timestamp":726161,"Filename":""},{"Id":243568,"Episode":"S03E01","Timestamp":724927,"Filename":""},{"Id":243567,"Episode":"S03E01","Timestamp":724426,"Filename":""},{"Id":243588,"Episode":"S03E01","Timestamp":727830,"Filename":""},{"Id":243581,"Episode":"S03E01","Timestamp":727446,"Filename":""},{"Id":243566,"Episode":"S03E01","Timestamp":724593,"Filename":""},{"Id":243572,"Episode":"S03E01","Timestamp":725661,"Filename":""},{"Id":243584,"Episode":"S03E01","Timestamp":728580,"Filename":""},{"Id":243586,"Episode":"S03E01","Timestamp":727630,"Filename":""},{"Id":372526,"Episode":"S03E22","Timestamp":362835,"Filename":""},{"Id":1018020,"Episode":"S08E04","Timestamp":490973,"Filename":""},{"Id":1101621,"Episode":"S08E17","Timestamp":1213945,"Filename":""},{"Id":566689,"Episode":"S05E07","Timestamp":510676,"Filename":""},{"Id":994247,"Episode":"S07E25","Timestamp":844944,"Filename":""},{"Id":861908,"Episode":"S07E06","Timestamp":1160275,"Filename":""},{"Id":861899,"Episode":"S07E06","Timestamp":1159607,"Filename":""},{"Id":1024181,"Episode":"S08E05","Timestamp":341840,"Filename":""},{"Id":1434152,"Episode":"S10E21","Timestamp":1009874,"Filename":""},{"Id":610269,"Episode":"S05E14","Timestamp":528911,"Filename":""},{"Id":569129,"Episode":"S05E07","Timestamp":1058223,"Filename":""}]'
     http_version: 
-  recorded_at: Mon, 15 Feb 2016 17:14:28 GMT
+  recorded_at: Mon, 22 Feb 2016 01:11:37 GMT
 - request:
     method: get
-    uri: https://frinkiac.com/api/caption?e=S10E13&t=775056
+    uri: https://frinkiac.com/api/caption?e=S10E13&t=774439
     body:
       encoding: US-ASCII
       string: ''
@@ -71,7 +71,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Mon, 15 Feb 2016 17:14:29 GMT
+      - Mon, 22 Feb 2016 01:11:37 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -79,20 +79,19 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d3ab639ba85b89c59391766d4828c05981455556469; expires=Tue, 14-Feb-17
-        17:14:29 GMT; path=/; domain=.frinkiac.com; HttpOnly
+      - __cfduid=da014649b0056bc7a00ac65f4244e20ef1456103497; expires=Tue, 21-Feb-17
+        01:11:37 GMT; path=/; domain=.frinkiac.com; HttpOnly
       Strict-Transport-Security:
       - max-age=15552000
       X-Content-Type-Options:
       - nosniff
       Cf-Ray:
-      - 2752a63c60b034e8-LHR
+      - 2786d16aa1c31e9b-SJC
     body:
-      encoding: UTF-8
-      string: '{"Frame":{"Id":1384173,"Episode":"S10E13","Timestamp":775056,"Filename":""},"Subtitles":[{"Id":108420,"Episode":"S10E13","StartTimestamp":772033,"EndTimestamp":773867,"Content":"NOBODY
+      encoding: ASCII-8BIT
+      string: '{"Frame":{"Id":1384170,"Episode":"S10E13","Timestamp":774439,"Filename":""},"Subtitles":[{"Id":108420,"Episode":"S10E13","StartTimestamp":772033,"EndTimestamp":773867,"Content":"NOBODY
         SNUGGLES WITH MAX POWER."},{"Id":108421,"Episode":"S10E13","StartTimestamp":773867,"EndTimestamp":776700,"Content":"YOU
-        STRAP YOURSELF IN AND FEEL THE Gs!"},{"Id":108422,"Episode":"S10E13","StartTimestamp":776700,"EndTimestamp":777934,"Content":"OH,
-        LORD."}],"Nearby":[{"Id":1384170,"Episode":"S10E13","Timestamp":774439,"Filename":""},{"Id":1384168,"Episode":"S10E13","Timestamp":774639,"Filename":""},{"Id":1384172,"Episode":"S10E13","Timestamp":774856,"Filename":""},{"Id":1384173,"Episode":"S10E13","Timestamp":775056,"Filename":""},{"Id":1384169,"Episode":"S10E13","Timestamp":775273,"Filename":""},{"Id":1384171,"Episode":"S10E13","Timestamp":775474,"Filename":""},{"Id":1384174,"Episode":"S10E13","Timestamp":775690,"Filename":""}]}'
+        STRAP YOURSELF IN AND FEEL THE Gs!"}],"Nearby":[{"Id":1384165,"Episode":"S10E13","Timestamp":773805,"Filename":""},{"Id":1384166,"Episode":"S10E13","Timestamp":774022,"Filename":""},{"Id":1384167,"Episode":"S10E13","Timestamp":774222,"Filename":""},{"Id":1384170,"Episode":"S10E13","Timestamp":774439,"Filename":""},{"Id":1384168,"Episode":"S10E13","Timestamp":774639,"Filename":""},{"Id":1384172,"Episode":"S10E13","Timestamp":774856,"Filename":""},{"Id":1384173,"Episode":"S10E13","Timestamp":775056,"Filename":""}]}'
     http_version: 
-  recorded_at: Mon, 15 Feb 2016 17:14:29 GMT
+  recorded_at: Mon, 22 Feb 2016 01:11:37 GMT
 recorded_with: VCR 3.0.1
