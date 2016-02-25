@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Sun, 07 Feb 2016 21:25:08 GMT
+      - Wed, 24 Feb 2016 12:47:30 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -29,25 +29,25 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=ded4d875553168b49e44f2c5652cf787d1454880308; expires=Mon, 06-Feb-17
-        21:25:08 GMT; path=/; domain=.frinkiac.com; HttpOnly
+      - __cfduid=dd06168fac4a98acb0995a50a59200ca91456318050; expires=Thu, 23-Feb-17
+        12:47:30 GMT; path=/; domain=.frinkiac.com; HttpOnly
       Cache-Control:
       - public, max-age=1800
       Cf-Cache-Status:
-      - EXPIRED
+      - HIT
       Vary:
       - Accept-Encoding
       Expires:
-      - Sun, 07 Feb 2016 21:55:08 GMT
+      - Wed, 24 Feb 2016 13:17:30 GMT
       Strict-Transport-Security:
       - max-age=15552000
       X-Content-Type-Options:
       - nosniff
       Cf-Ray:
-      - 27122a661a0211bf-SJC
+      - 279b47852293348e-LHR
     body:
       encoding: UTF-8
       string: "[]"
     http_version: 
-  recorded_at: Sun, 07 Feb 2016 21:25:08 GMT
+  recorded_at: Wed, 24 Feb 2016 12:47:29 GMT
 recorded_with: VCR 3.0.1
