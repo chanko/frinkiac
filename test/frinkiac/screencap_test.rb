@@ -26,9 +26,9 @@ class FrinkiacScreencapTest < Minitest::Test
 
       screencap = results.first
 
-      assert_equal(1201207, screencap.id)
+      assert_equal(1201200, screencap.id)
       assert_equal('S09E09', screencap.episode)
-      assert_equal(40022, screencap.timestamp)
+      assert_equal(37820, screencap.timestamp)
     end
   end
 
@@ -36,7 +36,7 @@ class FrinkiacScreencapTest < Minitest::Test
     VCR.use_cassette('search') do
       screencap = Frinkiac::Screencap.search('lazy saturday').first
 
-      assert_equal('https://frinkiac.com/img/S09E09/40022.jpg', screencap.image_url)
+      assert_equal('https://frinkiac.com/img/S09E09/37820.jpg', screencap.image_url)
     end
   end
 
@@ -52,7 +52,7 @@ class FrinkiacScreencapTest < Minitest::Test
     VCR.use_cassette('meme') do
       screencap = Frinkiac::Screencap.search('strap in and feel the g\'s').first
 
-      assert_equal(screencap.meme_url, 'https://frinkiac.com/meme/S10E13/774439.jpg?lines=NOBODY%20SNUGGLES%20WITH%20MAX%0APOWER.%20YOU%20STRAP%0AYOURSELF%20IN%20AND%20FEEL%20THE%0AGs!')
+      assert_equal(screencap.meme_url, 'https://frinkiac.com/meme/S10E13/774439.jpg?b64lines=Tk9CT0RZIFNOVUdHTEVTIFdJVEggTUFYClBPV0VSLiBZT1UgU1RSQVAKWU9VUlNFTEYgSU4gQU5EIEZFRUwgVEhFCkdzIQ==')
     end
   end
 
@@ -60,7 +60,7 @@ class FrinkiacScreencapTest < Minitest::Test
     VCR.use_cassette('meme') do
       screencap = Frinkiac::Screencap.search('strap in and feel the g\'s').first
 
-      assert_equal(screencap.meme_url("NOBODY SNUGGLES WITH MAX POWER.\nYOU STRAP YOURSELF IN AND FEEL THE Gs!"), 'https://frinkiac.com/meme/S10E13/774439.jpg?lines=NOBODY%20SNUGGLES%20WITH%20MAX%20POWER.%0AYOU%20STRAP%20YOURSELF%20IN%20AND%20FEEL%20THE%20Gs!')
+      assert_equal(screencap.meme_url("NOBODY SNUGGLES WITH MAX POWER.\nYOU STRAP YOURSELF IN AND FEEL THE Gs!"), 'https://frinkiac.com/meme/S10E13/774439.jpg?b64lines=Tk9CT0RZIFNOVUdHTEVTIFdJVEggTUFYIFBPV0VSLgpZT1UgU1RSQVAgWU9VUlNFTEYgSU4gQU5EIEZFRUwgVEhFIEdzIQ==')
     end
   end
 
@@ -68,7 +68,7 @@ class FrinkiacScreencapTest < Minitest::Test
     VCR.use_cassette('meme') do
       screencap = Frinkiac::Screencap.search('strap in and feel the g\'s').first
 
-      assert_equal(screencap.meme_url(["NOBODY SNUGGLES WITH MAX POWER.","YOU STRAP YOURSELF IN AND FEEL THE Gs!"]), 'https://frinkiac.com/meme/S10E13/774439.jpg?lines=NOBODY%20SNUGGLES%20WITH%20MAX%20POWER.%0AYOU%20STRAP%20YOURSELF%20IN%20AND%20FEEL%20THE%20Gs!')
+      assert_equal(screencap.meme_url(["NOBODY SNUGGLES WITH MAX POWER.","YOU STRAP YOURSELF IN AND FEEL THE Gs!"]), 'https://frinkiac.com/meme/S10E13/774439.jpg?b64lines=Tk9CT0RZIFNOVUdHTEVTIFdJVEggTUFYIFBPV0VSLgpZT1UgU1RSQVAgWU9VUlNFTEYgSU4gQU5EIEZFRUwgVEhFIEdzIQ==')
     end
   end
 

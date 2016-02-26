@@ -1,6 +1,7 @@
 require 'faraday'
 require 'json'
 require 'word_wrap'
+require 'base64'
 
 SITE_URL = 'https://frinkiac.com'
 API_URL = "#{SITE_URL}/api/search"
@@ -24,7 +25,7 @@ module Frinkiac
       caption = self.caption if caption.nil?
       caption = caption.join("\n") if caption.is_a?(Array)
 
-      "#{SITE_URL}/meme/#{episode}/#{timestamp}.jpg?lines=#{URI.escape caption}"
+      "#{SITE_URL}/meme/#{episode}/#{timestamp}.jpg?b64lines=#{Base64.strict_encode64 caption}"
     end
 
     def caption
