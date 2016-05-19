@@ -7,7 +7,7 @@ A ruby wrapper to interact with Frinkiac.com API based Ben Lewis's post: [Wrappi
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'frinkiac', '~> 0.0.1'
+gem 'frinkiac', '~> 0.0.4'
 ```
 
 And then execute:
