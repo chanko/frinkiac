@@ -1,6 +1,6 @@
 # Frinkiac
 
-A ruby wrapper to interact with Frinkiac.com API based Ben Lewis's post: [Wrapping Your API In A Custom Ruby Gem](https://blog.engineyard.com/2014/wrapping-your-api-in-a-ruby-gem).
+A ruby wrapper to interact with Frinkiac.com API based on Ben Lewis's post: [Wrapping Your API In A Custom Ruby Gem](https://blog.engineyard.com/2014/wrapping-your-api-in-a-ruby-gem).
 
 ## Installation
 
@@ -12,33 +12,15 @@ gem 'frinkiac', '~> 0.0.4'
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
-    $ gem install frinkiac
+    $ gem install frinkiac -v 0.0.4
 
 ## Usage
 
-Tha main object defined in this gem is ```Frinkiac::Screencap```, which gives us easy access to the attributes returned by the API: ```id```, ```episode``` and ```timestamp```.
-
-It also provides an ```image_url``` method, that takes the episode and timestamp information to return a valid image url.
-
-You can also get the ```caption``` from the image, as well as the ```meme_url```, which returns the caption overlaid on top of the image.
-
-You can also specify your own caption for the meme URL like so:
-
-```
-screencap.meme_url("I love those lazy Saturdays")
-```
-
-Or multiple lines of text like so
-
-```
-screencap.meme_url(["I love those lazy Saturdays", "Unlike that fake Saturday that almost got me fired"])
-```
-
-Currently there are only two ways to interact with the API through this gem.
+There are a couple ways to get screencaps from the Frinkiac API through this gem.
 
 You can get an array of screencaps that match a specific search term:
 
@@ -47,10 +29,30 @@ Frinkiac::Screencap.search('lazy saturday')
 ```
 
 
-And you can get a random screencap from the afromentioned array of screencaps:
+And you can get a random screencap from the aforementioned array of screencaps:
 
 ```
 Frinkiac::Screencap.random('lazy saturday')
+```
+
+After getting a screencap object, you now have easy access to the attributes: ```id```, ```episode``` and ```timestamp```.
+
+The ```Frinkiac::Screencap``` object also gives you access to some helper methods to make your life easier.
+
+There's the ```image_url``` method that returns a valid image url based on the episode and timestamp information returned by the API.
+
+The ```caption``` method hits the API's caption endpoint and returns a string of the original screencap's caption.
+
+And finally, there's the ```meme_url```. When used without params, this returns the original caption overlaid on top of the image.
+
+You can also customize the image by overlaying your own captions on top of the image like so:
+
+```
+screencap.meme_url("I love those lazy Saturdays")
+```
+Or multiple lines of text like so:
+```
+screencap.meme_url(["I love those lazy Saturdays", "Unlike that fake Saturday that almost got me fired"])
 ```
 
 ## Development
