@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "frinkiac"
   spec.version       = Frinkiac::VERSION
   spec.authors       = ['Cesar Camacho']
-  spec.email         = ['ccamacho@gapintelligence.com']
+  spec.email         = ['chanko@gmail.com']
 
   spec.summary       = %q{Gem to wrap Frinkiac.com API}
   spec.description   = %q{Gem to wrap Frinkiac.com API}
